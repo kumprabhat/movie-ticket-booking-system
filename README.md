@@ -6,7 +6,7 @@
 - [1.Problem Statement](#1problem-statement)
 - [2.Overview of requirements](#2overview-of-requirements)
   * [2.1 Summary of functional requirements](#21-Summary-of-functional-requirements)
-  * [2.2 Hit counter](#22-hit-counter)
+  * [2.2 Summary of non-functional requirements](#22-Summary-of-non-functional-requirements)
   * [2.4 Python package statistics](#24-python-package-statistics)
   * [2.5 Fast information of repository](#25-fast-information-of-repository)
   * [2.6 Github dynamic badges](#26-github-dynamic-badges)
@@ -19,3 +19,4 @@ We have to build an online movie ticket booking platform that caters to both **B
 
 # 2.Overview of requirements
 ## 2.1 Summary of functional requirements
+## 2.2 Summary of non-functional requirements
