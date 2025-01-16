@@ -5,12 +5,8 @@
 
 - [1. Problem Statement](#1-problem-statement)
 - [2. Overview of requirements](#2-system-requirements)
-  * [2.1 summary of functional requirements](12-summary-of-functional-requirements) 
-* [Use Case Diagram](#use-case-diagram)
-* [Class Diagram](#class-diagram)
-* [Activity Diagrams](#activity-diagrams)
-* [Code](#code)
-* [Concurrency](#concurrency)
+  * [2.1 summary of functional requirements](12-summary-of-functional-requirements)
+
   
 ### 1. Problem Statement
 We have to build an online movie ticket booking platform that caters to both **B2B**(Theatre Partners) and **B2C**(End Customers) clients.  Key goals we want to accomplish as part of the solution :
@@ -18,4 +14,4 @@ We have to build an online movie ticket booking platform that caters to both **B
 * Enable End Customers to browse thw platform to get access to movies across different cities, languages, and genres, as well as book tickets in advance with a seamless experience.
 
 ### 2. Overview of requirements
- #### 2.1 summary of functional requirements
+  #### 2.1 summary of functional requirements
