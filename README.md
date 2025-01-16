@@ -3,7 +3,7 @@
 
 # Table of contents
 
-- [1.Problem Statement](#1-problem-statement)
+- [1.Problem Statement](#1problem-statement)
 - [2.Overview of requirements](#2overview-of-requirements)
   * [2.1 Summary of functional requirements](#21-functional-requirements)
   * [2.2 Hit counter](#22-hit-counter)
