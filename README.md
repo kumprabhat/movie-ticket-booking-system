@@ -5,7 +5,7 @@
 
 - [1.Problem Statement](#1problem-statement)
 - [2.Overview of requirements](#2overview-of-requirements)
-  * [2.1 Summary of functional requirements](#21-functional-requirements)
+  * [2.1 Summary of functional requirements](#21functional-requirements)
   * [2.2 Hit counter](#22-hit-counter)
   * [2.4 Python package statistics](#24-python-package-statistics)
   * [2.5 Fast information of repository](#25-fast-information-of-repository)
