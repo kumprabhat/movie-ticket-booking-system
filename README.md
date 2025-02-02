@@ -22,7 +22,7 @@ We have to build an online movie ticket booking platform that caters to both **B
 
 ## 2.1 Summary of functional requirements
 
- <p> align="center">
+ <p align="center">
         <img src="/img/sytstemcontextdiagram.png" alt= "Movie Ticket Booking System">
         <br />
         Movie Ticket Booking System - System Context Diagram
