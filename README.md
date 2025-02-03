@@ -33,5 +33,9 @@ We have to build an online movie ticket booking platform that caters to both **B
          Movie Ticket Booking System - Use Case Model Diagram
         <br />
  </p>
+ #### Use Case Overview
+
+| \*\*User Case ID | \*\*Use Case Name | \*\*Descriptions |
+| ---------------- | ----------------- | ---------------- |
 
 ## 2.2 Summary of non-functional requirements
