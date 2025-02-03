@@ -54,3 +54,17 @@ We have to build an online movie ticket booking platform that caters to both **B
 | UC-14        | Pull Data From External Theatre system | System will connect with the external theatre lmanagement system to pull external inventory as there may be some thetres that are not part of our local Theatre management system                                                                      |
 
 ## 2.2 Summary of non-functional requirements
+
+#### NFR Summary
+
+| ID  | Requirement statement                                                                        |
+| --- | -------------------------------------------------------------------------------------------- |
+| 01  | The system should be highly scalable, available, reliable,consistent and fault tolerant      |
+| 02  | Integrate with theatres having existing IT systems and new theatres and localization(movies) |
+| 03  | Scale to multiple cities, countries and gurantee platform availability of 99.9%              |
+| 04  | Movie Metadata - description, actor's info etc.                                              |
+| 05  | Personalization - user history based suggestions                                             |
+| 06  | Log Management - to debug application errors                                                 |
+| 07  | Monitoring System - errors,alerts, request count, Visulatisation tools etc                   |
+| 08  | Business Intelligence - near real-time analytics,dashboards, etc                             |
+| 09  | Monetize the platform                                                                        |
