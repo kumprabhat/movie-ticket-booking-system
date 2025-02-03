@@ -42,7 +42,6 @@ We have to build an online movie ticket booking platform that caters to both **B
 | UC-02        | Create Booking | Allows B2C end user to book movie ticket by selectiing theatre,timing and preferred seats for the day and will make third party payment integration. This will also send SMS and Email notification to both B2B and B2C user after successful bookings |
 | UC-03        | View Booking   | Allows B2C user to view the booking                                                                                                                                                                                                                    |
 | UC-04        | Cancel Booking | Allows B2C user to cancel the booking and will initiate the refund payment after seat/s release. This will also send SMS/Email notification to both B2B and B2C users after successful cancelation/s                                                   |
-
-| UC-05 | CRUD of Movie | Allows B2B(Internal operator) to create, update, and delete Movie |
+| UC-05        | CRUD of Movie  | Allows B2B(Internal operator) to create, update, and delete Movie                                                                                                                                                                                      |
 
 ## 2.2 Summary of non-functional requirements
