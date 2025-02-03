@@ -7,9 +7,8 @@
 - [2.Overview of requirements](#2overview-of-requirements)
   - [2.1 Summary of functional requirements](#21-Summary-of-functional-requirements)
   - [2.2 Summary of non-functional requirements](#22-Summary-of-non-functional-requirements)
-  - [2.4 Python package statistics](#24-python-package-statistics)
-  - [2.5 Fast information of repository](#25-fast-information-of-repository)
-  - [2.6 Github dynamic badges](#26-github-dynamic-badges)
+- [3.Overview of Solution Architecture](#3overview-of-Solution-Architecture)
+  - [3.1 Application Architecture](#31-application-architecture)
 
 # 1.Problem Statement
 
@@ -68,3 +67,5 @@ We have to build an online movie ticket booking platform that caters to both **B
 | 07  | Monitoring System - errors,alerts, request count, Visulatisation tools etc                   |
 | 08  | Business Intelligence - near real-time analytics,dashboards, etc                             |
 | 09  | Monetize the platform                                                                        |
+
+# 3.Overview of Solution Architecture
