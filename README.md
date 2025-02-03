@@ -26,8 +26,11 @@ We have to build an online movie ticket booking platform that caters to both **B
         <img src="/img/sytstemcontextdiagram.png" alt= "Movie Ticket Booking System">
         <br />
         Movie Ticket Booking System - System Context Diagram
+        <br />
         <img src="/img/usecasediagram.png" alt= "Movie Ticket Booking System UseCase">
         <br />
          Movie Ticket Booking System - Use Case Model Diagram
- </p>       
+        <br />
+ </p>
+
 ## 2.2 Summary of non-functional requirements
