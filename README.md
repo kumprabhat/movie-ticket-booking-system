@@ -36,7 +36,8 @@ We have to build an online movie ticket booking platform that caters to both **B
  
  #### Use Case Overview
 
-| User Case ID | Use Case Name | Descriptions |
-| ------------ | ------------- | ------------ |
+| User Case ID | Use Case Name | Descriptions                                                                           |
+| ------------ | ------------- | -------------------------------------------------------------------------------------- |
+| UC-01        | Search Movie  | Allows B2C and B2B end Users to search Movie by language, City, release date and Title |
 
 ## 2.2 Summary of non-functional requirements
