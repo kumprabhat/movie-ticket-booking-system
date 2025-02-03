@@ -36,8 +36,9 @@ We have to build an online movie ticket booking platform that caters to both **B
  
  #### Use Case Overview
 
-| User Case ID | Use Case Name | Descriptions                                                                           |
-| ------------ | ------------- | -------------------------------------------------------------------------------------- |
-| UC-01        | Search Movie  | Allows B2C and B2B end Users to search Movie by language, City, release date and Title |
+| User Case ID | Use Case Name  | Descriptions                                                                                                                                                                                                                                      |
+| ------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| UC-01        | Search Movie   | Allows B2C and B2B end Users to search Movie by language, City, release date and Title                                                                                                                                                            |
+| UC-02        | Create Booking | Allows B2C end user to book movie ticket by selectiing theatre,timing and preferred seats for the day and will make third party payment integration. This will also SMS and Email notification to both B2B and B2C user after successful bookings |
 
 ## 2.2 Summary of non-functional requirements
