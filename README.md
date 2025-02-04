@@ -9,6 +9,7 @@
   - [2.2 Summary of non-functional requirements](#22-Summary-of-non-functional-requirements)
 - [3.Overview of Solution Architecture](#3overview-of-Solution-Architecture)
   - [3.1 Application Architecture](#31-application-architecture)
+- [4.Application Security Architecture](#4application-security-architecture)
 
 # 1.Problem Statement
 
