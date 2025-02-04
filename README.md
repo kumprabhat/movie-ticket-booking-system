@@ -70,3 +70,11 @@ We have to build an online movie ticket booking platform that caters to both **B
 | 09  | Monetize the platform                                                                        |
 
 # 3.Overview of Solution Architecture
+
+## 3.1 Application Architecture
+
+ <p align="center">
+        <img src="/img/ApplicationArchitecture.png" alt= "Movie arch Booking System">
+        <br />
+        Movie Ticket Booking System - Application Architecture
+ </p>
