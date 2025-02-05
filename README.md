@@ -9,8 +9,8 @@
   - [2.2 Summary of non-functional requirements](#22-Summary-of-non-functional-requirements)
 - [3.Overview of Solution Architecture](#3overview-of-Solution-Architecture)
   - [3.1 Application Architecture](#31-application-architecture)
-  - [3.2 Design Objectives and Principles](#31-application-architecture)
-  - [3.3 Design Considerations](#31-application-architecture)
+  - [3.2 Design Objectives and Principles](#32-desing_objective_principle)
+  - [3.3 Design Considerations](#33-design_consideration)
 - [4.Application Security Architecture](#4application-security-architecture)
 
 # 1.Problem Statement
@@ -92,15 +92,36 @@ We have to build an online movie ticket booking platform that caters to both **B
 
 ### Domain Microservices
 
-| Microservice Name       | Service Function                                                                                                                                                                                                  |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| search_svc              | It is primary interface that allows users to search for movies. Retrieves data from elastic search and customization such as fiters, ongoing deals/compaign etc.                                                  |
-| tbs_booking_svc         | it is core domain service to manage the entire booking process. This will fetch seats info, reserving seats, initiate payment, confirming booking after successful payment and initiating the ticketing workflow. |
-| tbs_ticket_svc          | This service manages all operation related to the ticketing workflow including workflows such as billing, notificatons and invoice for both booking and cancellation events.                                      |
-| billing_svc             | This will record the credit and debit of various components, such as fare, commission and offers and more between organization, theatre operators and the end users.                                              |
-| notification_svc        | It manages all the different types of notifications triggered by the system.                                                                                                                                      |
-| b2b_inventory_mngr_svc  | This will enable B2B opearators to manage their inventory. This includes configuring theatres, halls, shows, fares, seats layouts, offers etc                                                                     |
-| inventory_aggrgator_svc | This service is responsible to combine the data from both local and remote theatre, transform the data to system compatible format if necessary and return the result to caller.                                  |
-| payment_manager_svc     | It is responsible for all the payment related workflows and interfacing with the available payment gateways                                                                                                       |
-| inventory_freshness_svc | It updates the elasticsearch with any changes made to the inventory by the theatre operators. This ensures that our search data is always up-to date.                                                             |
-| inventory_freshness_svc | It updates the elasticsearch with any changes made to the inventory by the theatre operators. This ensures that our search data is always up-to date.                                                             |
+| Microservice Name             | Service Function                                                                                                                                                                                                                                          |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| search_svc                    | It is primary interface that allows users to search for movies. Retrieves data from elastic search and customization such as fiters, ongoing deals/compaign etc.                                                                                          |
+| tbs_booking_svc               | it is core domain service to manage the entire booking process. This will fetch seats info, reserving seats, initiate payment, confirming booking after successful payment and initiating the ticketing workflow.                                         |
+| tbs_ticket_svc                | This service manages all operation related to the ticketing workflow including workflows such as billing, notificatons and invoice for both booking and cancellation events.                                                                              |
+| billing_svc                   | This will record the credit and debit of various components, such as fare, commission and offers and more between organization, theatre operators and the end users.                                                                                      |
+| notification_svc              | It manages all the different types of notifications triggered by the system.                                                                                                                                                                              |
+| b2b_inventory_mngr_svc        | This will enable B2B opearators to manage their inventory. This includes configuring theatres, halls, shows, fares, seats layouts, offers etc                                                                                                             |
+| inventory_aggrgator_svc       | This service is responsible to combine the data from both local and remote theatre, transform the data to system compatible format if necessary and return the result to caller.                                                                          |
+| payment_manager_svc           | It is responsible for all the payment related workflows and interfacing with the available payment gateways                                                                                                                                               |
+| inventory_freshness_svc       | It updates the elasticsearch with any changes made to the inventory by the theatre operators. This ensures that our search data is always up-to date.                                                                                                     |
+| scheduled_search_data_builder | It is crawler that runs periodically aggreagating all the available inventory for predefined number of days and copies to elasticsearch.It pulls inventory from both our internal theatre system and external theatre system integrated with our platform |
+
+## 3.2 Design Objectives and Principles
+
+1.  Increase cohesion where possible
+2.  Reduce coupling where possible
+3.  Keep the level of abstraction as high as possible
+4.  Increase reusablility where possible
+5.  Design for flexibility
+6.  Design should not reinvent the wheel
+7.  Design for portability
+
+## 3.3 Design Considerations
+
+1. Object orientation
+2. Microservice based architecture pattern such as chain proxy pattern, SAGA pattern, CQRS, API Gateway pattern, Change data capture patten and more.
+3. Loose coupling
+4. Modularity
+5. scalability
+6. avaiablility
+7. separate reporting Layer
+8. Audit Trail, Logging and Monitoring
