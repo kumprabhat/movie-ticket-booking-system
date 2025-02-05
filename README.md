@@ -11,7 +11,8 @@
   - [3.1 Application Architecture](#31-application-architecture)
   - [3.2 Design Objectives and Principles](#32-desing_objective_principle)
   - [3.3 Design Considerations](#33-design_consideration)
-- [4.Application Security Architecture](#4application-security-architecture)
+  - [3.4 Technology Stack](#34-technology_stack)
+- [4.Deployment Architecture](#4deployment_architecture)
 
 # 1.Problem Statement
 
@@ -125,3 +126,27 @@ We have to build an online movie ticket booking platform that caters to both **B
 6. avaiablility
 7. separate reporting Layer
 8. Audit Trail, Logging and Monitoring
+
+## Technology Stack
+
+     Spring Boot
+     MySql
+     keycloak
+     open JDK
+     elastic search
+     EFK Stack
+     kafka
+     openshift
+     prometheus and Nagios
+     selenium ,robot, cucumber
+     kubernetes
+     Docker/podman
+     Redis
+
+# Deployment Architecture
+
+ <p align="center">
+        <img src="/img/deploymentarch.png" alt= "Movie deployarch Booking System">
+        <br />
+        Movie Ticket Booking System - Deployment Architecture
+ </p>
