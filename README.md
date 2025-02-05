@@ -158,7 +158,7 @@ We have to build an online movie ticket booking platform that caters to both **B
 ### 5.1 Continous Integration and Continous Deployment
 
    <p align="center">
-        <img src="/img/api_msa_ci_cd.png.png" alt= "Movie cicd Booking System">
+        <img src="/img/api_msa_ci_cd.png" alt= "Movie cicd Booking System">
         <br />
         Movie Ticket Booking System - CI/CD pipeline
  </p>
