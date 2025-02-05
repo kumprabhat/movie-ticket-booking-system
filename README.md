@@ -179,7 +179,6 @@ Below is a REST backend API for browsing theatres, shows, and timings based on a
 this api will give a list of theatres:
 
     http://localhost:8080/movie/ticket-booking/theatres
-    </br>
 
 2.Book movie tickets by selecting a theatre, timing, and preferred seats for the day
 
