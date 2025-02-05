@@ -9,6 +9,8 @@
   - [2.2 Summary of non-functional requirements](#22-Summary-of-non-functional-requirements)
 - [3.Overview of Solution Architecture](#3overview-of-Solution-Architecture)
   - [3.1 Application Architecture](#31-application-architecture)
+  - [3.2 Design Objectives and Principles](#31-application-architecture)
+  - [3.3 Design Considerations](#31-application-architecture)
 - [4.Application Security Architecture](#4application-security-architecture)
 
 # 1.Problem Statement
@@ -78,3 +80,27 @@ We have to build an online movie ticket booking platform that caters to both **B
         <br />
         Movie Ticket Booking System - Application Architecture
  </p>
+
+### Experience Layer Microservices
+
+| Microservice Name      | Service Function                                                                                                           |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| b2b_tms_searchapi      | Platform provides this public api for internal theatre management system which will in turn call search domain service     |
+| b2c_tms_searchapi      | Platform provides this public api for Ticket Booking system which will in turn call search domain service                  |
+| b2c_tbs_booking_api    | Platform provides this public api for Ticket Booking system which will in turn call booking domain service                 |
+| b2b_inventory_mngr_api | Platform provides this public api for internal theatre management system will in turn call internal manager domain service |
+
+### Domain Microservices
+
+| Microservice Name       | Service Function                                                                                                                                                                                                  |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| search_svc              | It is primary interface that allows users to search for movies. Retrieves data from elastic search and customization such as fiters, ongoing deals/compaign etc.                                                  |
+| tbs_booking_svc         | it is core domain service to manage the entire booking process. This will fetch seats info, reserving seats, initiate payment, confirming booking after successful payment and initiating the ticketing workflow. |
+| tbs_ticket_svc          | This service manages all operation related to the ticketing workflow including workflows such as billing, notificatons and invoice for both booking and cancellation events.                                      |
+| billing_svc             | This will record the credit and debit of various components, such as fare, commission and offers and more between organization, theatre operators and the end users.                                              |
+| notification_svc        | It manages all the different types of notifications triggered by the system.                                                                                                                                      |
+| b2b_inventory_mngr_svc  | This will enable B2B opearators to manage their inventory. This includes configuring theatres, halls, shows, fares, seats layouts, offers etc                                                                     |
+| inventory_aggrgator_svc | This service is responsible to combine the data from both local and remote theatre, transform the data to system compatible format if necessary and return the result to caller.                                  |
+| payment_manager_svc     | It is responsible for all the payment related workflows and interfacing with the available payment gateways                                                                                                       |
+| inventory_freshness_svc | It updates the elasticsearch with any changes made to the inventory by the theatre operators. This ensures that our search data is always up-to date.                                                             |
+| inventory_freshness_svc | It updates the elasticsearch with any changes made to the inventory by the theatre operators. This ensures that our search data is always up-to date.                                                             |
