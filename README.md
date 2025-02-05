@@ -168,3 +168,19 @@ We have to build an online movie ticket booking platform that caters to both **B
      kubernetes
      Docker/podman
      Redis
+
+</br>
+</br>
+##### code Descriptions
+Below Features implementd as per use case instructios(Refer src folder)
+
+1.Browse theatres currently running the show (movie selected) in the town, including show timing by a chosen date
+Below is a REST backend API for browsing theatres, shows, and timings based on a chosen date
+this api will give a list of theatres:
+
+    http://localhost:8080/movie/ticket-booking/theatres
+    </br>
+
+2.Book movie tickets by selecting a theatre, timing, and preferred seats for the day
+
+    http://localhost:8080/movie/ticket-booking/shows?date=2025-02-04T18:30:00&movieTitle=Inception
